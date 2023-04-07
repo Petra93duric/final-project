@@ -13,7 +13,9 @@ const HomePage = () => {
  
   return (
     <div className="div-homePage">
-      <Header />
+      <Header >
+        <p>Petra</p>
+      </Header>
       <div className="wrapper-home">
         <h1>MVP Cone</h1>
         <p>

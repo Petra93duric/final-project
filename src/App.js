@@ -1,3 +1,5 @@
+import React, {  useEffect, useState } from "react";
+
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import { ApplicationProvider } from "./context";
@@ -9,10 +11,32 @@ import AdminReports from "./pages/AdminReports";
 import AdminCreateReports from "./pages/AdminCreateReports";
 
 function App() {
-  
+const [candidates, setCandidates]= useState([])
+const [reports, setReports]= useState([])
+
+  function fetchDataCandidates() {
+    fetch("http://localhost:3333/api/candidates")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data)
+        setCandidates(data)
+      });
+  }
+  function fetchDataReports() {
+    fetch("http://localhost:3333/api/reports")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data)
+        setReports(data)
+      });
+  }
+  useEffect(() => {
+    fetchDataCandidates();
+    fetchDataReports()
+  }, []);
   return (
     <div className="App">
-      <ApplicationProvider>
+      <ApplicationProvider value={{candidates, reports}} >
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/candidates" element={<Candidates />} />
