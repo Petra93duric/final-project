@@ -1,0 +1,13 @@
+.div-adminReports{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wrapper-adminReports{
+    flex-grow: 1;
+    display: flex;
+    margin-left: 400px;
+    padding: 100px 0 0 0;
+}

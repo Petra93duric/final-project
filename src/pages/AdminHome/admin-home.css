@@ -1,0 +1,13 @@
+.div-adminHome{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wrapper-adminHome{
+    flex-grow: 1;
+}
+
+
+

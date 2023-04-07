@@ -1,9 +1,21 @@
 import React from 'react'
+import Footer from '../../components/Footer'
+import Header from '../../components/Header'
+import SideBar from '../../components/SideBar'
 import "./admin-home.css"
 
 const AdminHome = () => {
   return (
-    <div>AdminHome</div>
+    <div className='div-adminHome'>
+      <Header />
+        <SideBar />
+      <div className='wrapper-adminHome'>
+
+      </div>
+
+      <Footer />
+
+    </div>
   )
 }
 

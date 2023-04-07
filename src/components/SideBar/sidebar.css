@@ -1,0 +1,7 @@
+.div-sideBar {
+  padding: 100px 0 0 0;
+  background-color: rgba(0, 0, 0, 0.271);
+  width: 200px;
+  position: fixed;
+  height: 100%;
+}
