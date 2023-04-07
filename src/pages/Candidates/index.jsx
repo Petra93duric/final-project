@@ -18,7 +18,7 @@ const Candidates = () => {
       />
       <div className='wrapper-candidates'>
       <Toggle />
-      <h2>Candidates</h2>
+      <h2 >Candidates</h2>
       <SearchInput />
       {candidates.map((element)=>(
         <CandidateCard 

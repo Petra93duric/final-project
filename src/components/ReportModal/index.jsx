@@ -1,9 +1,11 @@
 import React from 'react'
 import "./report-modal.css"
 
-const ReportModal = () => {
+const ReportModal = ({element}) => {
   return (
-    <div>ReportModal</div>
+    <div className='div-modal'>
+      <p>{element.phase}</p>
+    </div>
   )
 }
 

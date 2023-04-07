@@ -1,0 +1,10 @@
+.div-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+    min-height: 400px;
+    background-color: wheat;
+    border: 2px solid #000;
+}

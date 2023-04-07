@@ -8,7 +8,7 @@ import "./admin-reports.css";
 const AdminReports = () => {
   return (
     <div className="div-adminReports">
-      <Header />
+      <Header goBack="AdminHome" goToRoute={"/admin_home"} />
       <SideBar />
       <div className="wrapper-adminReports">
         <h2>Reports</h2>

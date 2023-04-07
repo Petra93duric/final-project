@@ -7,7 +7,7 @@ import "./admin-home.css"
 const AdminHome = () => {
   return (
     <div className='div-adminHome'>
-      <Header />
+      <Header goBack="AdminHome" />
         <SideBar />
       <div className='wrapper-adminHome'>
 
