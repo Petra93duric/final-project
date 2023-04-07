@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { Link } from 'react-router-dom'
 import "./link-button.css"
 
-const LinkButton = () => {
+const LinkButton = ({content,linkTo}) => {
+
+
   return (
-    <div>LinkButton</div>
+    <Link to={linkTo}> <p> {content} </p> </Link>
   )
 }
 

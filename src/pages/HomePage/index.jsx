@@ -1,28 +1,35 @@
-import React from 'react'
-import "./homepage.css"
-import { ApplicationProvider } from '../../context';
-import { Route, Routes } from "react-router-dom";
-import Candidates from '../Candidates';
-import CandidateInfo from '../CandidateInfo';
-import AdminCreateReports from '../AdminCreateReports';
-import AdminHome from '../AdminHome';
-import AdminReports from '../AdminReports';
+import React, {useContext} from "react";
+import "./homepage.css";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import LinkButton from "../../components/LinkButton";
+import { applicationContext } from '../../context'
+import PartnerSection from '../../components/PartnerSection'
+
+
 
 const HomePage = () => {
+
+ 
   return (
-    <ApplicationProvider>
-      <div>HomePage</div>
-      <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route path="/candidates" element={<Candidates />}>
-          <Route path=":id" element={<CandidateInfo />} />
-        </Route>
-        <Route path="/admin_home" element={<AdminHome />}>
-          <Route path="reports" element={<AdminReports />} />
-          <Route path="create_reports" element={<AdminCreateReports />} />
-        </Route>
-      </Routes>
-    </ApplicationProvider>
+    <div className="div-homePage">
+      <Header />
+      <div className="wrapper-home">
+        <h1>MVP Cone</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in
+          illum perferendis expedita omnis excepturi unde debitis natus officia
+          numquam sequi officiis ipsum voluptates minima quo architecto nihil,
+          iure eveniet.
+        </p>
+        <LinkButton content="Get Started" linkTo="/candidates"/>
+        <LinkButton content="Admin" linkTo="/admin_home" />
+        <PartnerSection />
+      </div>
+      <img src="" alt="" />
+
+      <Footer />
+    </div>
   );
 };
 
