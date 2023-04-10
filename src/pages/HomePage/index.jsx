@@ -1,14 +1,26 @@
-import React, {useContext} from "react";
+import React, {useState} from "react";
 import "./homepage.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import LinkButton from "../../components/LinkButton";
 import { applicationContext } from '../../context'
 import PartnerSection from '../../components/PartnerSection'
+import Modal from "@mui/material/Modal";
+import ReportModal from "../../components/ReportModal";
+import AdminLoginModal from "../../components/AdminLoginModal"
+
+
 
 
 
 const HomePage = () => {
+  const [open, setOpen] = React.useState(false);
+  const [clickedModal, setClickedModal] = useState(null);
+  const handleOpen = () => {
+    setOpen(true);
+    setClickedModal();
+  };
+  const handleClose = () => setOpen(false);
 
  
   return (
@@ -25,7 +37,13 @@ const HomePage = () => {
           iure eveniet.
         </p>
         <LinkButton content="Get Started" linkTo="/candidates"/>
-        <LinkButton content="Admin" linkTo="/admin_home" />
+        <button onClick={() => handleOpen()}>Admin</button>
+        <Modal open={open} onClose={handleClose}>
+          <div>
+            <AdminLoginModal element ={clickedModal} />
+          </div>
+        </Modal>
+        
         <PartnerSection />
       </div>
       <img src="" alt="" />

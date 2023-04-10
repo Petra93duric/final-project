@@ -1,10 +1,17 @@
-import React from 'react'
-import "./candidate-report.css"
+import React, { useContext } from "react";
+import "./candidate-report.css";
+import moment from "moment";
 
-const CandidateReport = () => {
+const CandidateReport = ({ report }) => {
   return (
-    <div>CandidateReport</div>
-  )
-}
+    <div className="div-candidateReport">
+      <p>{report.companyName}</p>
+      <p>{report.candidateName}</p>
+      <p>{moment(report.interviewDate).format("mm/dd/yyyy")}</p>
+      <p>{report.status}</p>
+      <h2>X</h2>
+    </div>
+  );
+};
 
-export default CandidateReport
+export default CandidateReport;

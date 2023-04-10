@@ -13,10 +13,10 @@ const CandidateInfo = () => {
   const candidate = candidates.find((e) => e.id == id);
   const candidateReports = reports.filter((e) => e.candidateId == id);
   const [open, setOpen] = React.useState(false);
-  const [selectedCandidate, setSelectedCandidate] = useState(null);
+  const [clickedModal, setClickedModal] = useState(null);
   const handleOpen = (element) => {
     setOpen(true);
-    setSelectedCandidate(element);
+    setClickedModal(element);
   };
   const handleClose = () => setOpen(false);
 
@@ -37,15 +37,15 @@ const CandidateInfo = () => {
           return (
             <div>
               <p>{element.companyName}</p>
-              <p>{element.status}</p>
               <p>{element.interviewDate}</p>
+              <p>{element.status}</p>
               <button onClick={() => handleOpen(element)}>Click</button>
             </div>
           );
         })}
         <Modal open={open} onClose={handleClose}>
           <div>
-            <ReportModal element={selectedCandidate} />
+            <ReportModal element={clickedModal} />
           </div>
         </Modal>
       </div>

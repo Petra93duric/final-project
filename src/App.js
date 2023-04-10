@@ -13,12 +13,16 @@ import AdminCreateReports from "./pages/AdminCreateReports";
 function App() {
   const [candidates, setCandidates] = useState([]);
   const [reports, setReports] = useState([]);
+  const [companies, setCompanies] = useState([]);
+  const [value, setValue] = useState("");
+
+
 
   function fetchDataCandidates() {
     fetch("http://localhost:3333/api/candidates")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        
         setCandidates(data);
       });
   }
@@ -26,17 +30,30 @@ function App() {
     fetch("http://localhost:3333/api/reports")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+       
         setReports(data);
       });
+  }
+  function fetchDataCompanies() {
+    fetch("http://localhost:3333/api/companies")
+      .then((res) => res.json())
+      .then((data) => {
+        
+        setCompanies(data);
+      });
+
+  }
+  function showClicked (input){
+    setValue(input)
   }
   useEffect(() => {
     fetchDataCandidates();
     fetchDataReports();
-  }, []);
+    fetchDataCompanies();
+  }, [value]);
   return (
     <div className="App">
-      <ApplicationProvider value={{ candidates, reports }}>
+      <ApplicationProvider value={{ candidates, reports, companies, showClicked, value }}>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/candidates" element={<Candidates />} />

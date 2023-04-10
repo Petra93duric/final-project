@@ -1,10 +1,21 @@
-import React from 'react'
-import "./search-input.css"
+import React, { useContext, useState } from "react";
+import { applicationContext } from "../../context";
+import "./search-input.css";
 
 const SearchInput = () => {
-  return (
-    <div>SearchInput</div>
-  )
-}
+  const { showClicked } = useContext(applicationContext);
 
-export default SearchInput
+  return (
+    <div>
+      <input
+        type="text"
+        placeholder="Search..."
+        onChange={(e) => {
+          showClicked(e.target.value);
+        }}
+      />
+    </div>
+  );
+};
+
+export default SearchInput;

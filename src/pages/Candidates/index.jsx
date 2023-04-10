@@ -9,7 +9,8 @@ import CandidateCard from '../../components/CandidateCard'
 
 
 const Candidates = () => {
-  const {candidates}=useContext(applicationContext)
+  const {candidates,value}=useContext(applicationContext)
+  const filtered = candidates.filter(char=>char.name.toLowerCase().includes(value.toLowerCase()))
 
   return (
     <div className='div-candidates'>
@@ -20,7 +21,7 @@ const Candidates = () => {
       <Toggle />
       <h2 >Candidates</h2>
       <SearchInput />
-      {candidates.map((element)=>(
+      {filtered && filtered?.map((element)=>(
         <CandidateCard 
          candidate={element}
         />

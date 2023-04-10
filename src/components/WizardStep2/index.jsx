@@ -1,9 +1,30 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
+import { applicationContext } from "../../context";
+import SearchInput from '../SearchInput'
+import WizardSecondCard from '../WizardSecondCard';
 import "./wizard-step-2.css"
 
-const WizardStep2 = () => {
+const WizardStep2 = ({next2ButtonClicked,backButtonClicked,setCreateReport, createReport }) => {
+  const { companies, value } = useContext(applicationContext);
+  const filtered = companies.filter(char=>char.name.toLowerCase().includes(value.toLowerCase()))
+
+  
+
   return (
-    <div>WizardStep2</div>
+    <div>
+      <SearchInput />
+      <div>
+        {filtered && filtered?.map((e) =>(
+          <WizardSecondCard
+          company={e}
+          setCreateReport={setCreateReport}
+          createReport={createReport}
+          />
+          ))}
+          <button onClick={backButtonClicked}>Back</button>
+          <button onClick={next2ButtonClicked}>Next</button>
+      </div>
+    </div>
   )
 }
 
