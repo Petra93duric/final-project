@@ -6,11 +6,11 @@ const SearchInput = () => {
   const { showClicked } = useContext(applicationContext);
 
   return (
-    <div>
+    <div className="div-searchInput">
       <input
         type="text"
         placeholder="Search..."
-        onChange={(e) => {
+        onInput={(e) => {
           showClicked(e.target.value);
         }}
       />

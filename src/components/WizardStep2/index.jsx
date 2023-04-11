@@ -22,7 +22,7 @@ const WizardStep2 = ({next2ButtonClicked,backButtonClicked,setCreateReport, crea
           />
           ))}
           <button onClick={backButtonClicked}>Back</button>
-          <button onClick={next2ButtonClicked}>Next</button>
+          <button onClick={next2ButtonClicked} disabled={!createReport.companyName ? true : false}>Next</button>
       </div>
     </div>
   )

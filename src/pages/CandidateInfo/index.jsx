@@ -6,6 +6,7 @@ import { applicationContext } from "../../context";
 import { useParams } from "react-router-dom";
 import Modal from "@mui/material/Modal";
 import ReportModal from "../../components/ReportModal";
+import moment from "moment/moment";
 
 const CandidateInfo = () => {
   const { candidates, reports } = useContext(applicationContext);
@@ -25,17 +26,24 @@ const CandidateInfo = () => {
       <Header goToRoute="/candidates" goBack="Candidates" />
       <div className="wrapper-candidateInfo">
         <h2>Candidate Info</h2>
-        <img src={`${candidate?.avatar}`} alt="candidate" />
-        <div className="info-details">
-          <p>{candidate?.name}</p>
-          <p>{candidate?.email}</p>
-          <p>{candidate?.birthday}</p>
-          <p>{candidate?.education}</p>
+        <div className="div-candidateInfoContent">
+          <img src={`${candidate?.avatar}`} alt="candidate" />
+          <div className="info-details">
+            <p>Name: {candidate?.name}</p>
+            <p>Email: {candidate?.email}</p>
+            <p>Date of Birth: {moment(candidate?.birthday).format("DD/MM/YYYY")}</p>
+            {/* {moment(report.interviewDate).format("mm/dd/yyyy")} */}
+            <p>Education: {candidate?.education}</p>
+          </div>
         </div>
-        <h3>Reports</h3>
+        <div className="titles-candidate-info">
+          <h3>Company Name</h3>
+          <h3>Interview Date</h3>
+          <h3>Status</h3>
+        </div>
         {candidateReports?.map((element, i) => {
           return (
-            <div>
+            <div className="mapped-reports">
               <p>{element.companyName}</p>
               <p>{element.interviewDate}</p>
               <p>{element.status}</p>

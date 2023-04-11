@@ -15,22 +15,27 @@ function App() {
   const [reports, setReports] = useState([]);
   const [companies, setCompanies] = useState([]);
   const [value, setValue] = useState("");
-
-
+  const [body, setBody] = useState({
+    email: "",
+    password: "",
+  });
+  const [accessToken, setAccessToken] = useState(
+    JSON.parse(localStorage.getItem("accessToken"))
+  );
 
   function fetchDataCandidates() {
     fetch("http://localhost:3333/api/candidates")
       .then((res) => res.json())
       .then((data) => {
-        
         setCandidates(data);
       });
   }
   function fetchDataReports() {
-    fetch("http://localhost:3333/api/reports")
+    fetch("http://localhost:3333/api/reports", {
+      method: "GET",
+    })
       .then((res) => res.json())
       .then((data) => {
-       
         setReports(data);
       });
   }
@@ -38,13 +43,11 @@ function App() {
     fetch("http://localhost:3333/api/companies")
       .then((res) => res.json())
       .then((data) => {
-        
         setCompanies(data);
       });
-
   }
-  function showClicked (input){
-    setValue(input)
+  function showClicked(input) {
+    setValue(input);
   }
   useEffect(() => {
     fetchDataCandidates();
@@ -53,7 +56,19 @@ function App() {
   }, [value]);
   return (
     <div className="App">
-      <ApplicationProvider value={{ candidates, reports, companies, showClicked, value }}>
+      <ApplicationProvider
+        value={{
+          candidates,
+          reports,
+          companies,
+          showClicked,
+          value,
+          setBody,
+          body,
+          setAccessToken,
+          accessToken
+        }}
+      >
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/candidates" element={<Candidates />} />

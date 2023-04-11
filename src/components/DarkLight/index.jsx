@@ -3,7 +3,7 @@ import "./dark-light.css"
 
 const DarkLight = () => {
   return (
-    <div>DarkLight</div>
+    <div>OO</div>
   )
 }
 

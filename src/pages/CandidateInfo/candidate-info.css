@@ -1,5 +1,58 @@
 .wrapper-candidateInfo {
   min-height: 100vh;
-  padding: 100px 0 0 0;
+  padding: 150px;
+}
+.wrapper-candidateInfo h2 {
+  text-align: center;
+  padding: 10px;
+  font-weight: 200;
+  font-size: 35px;
+  margin-bottom: 50px;
 }
 
+.div-candidateInfoContent {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  
+
+}
+.div-candidateInfoContent img {
+  width: 20%;
+}
+.info-details {
+  background-color: #232323;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: left;
+  width: 20%;
+  margin-left: 50px;
+
+}
+.titles-candidate-info {
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  border-bottom: 3.5px solid #ffdc60;
+}
+.mapped-reports {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ffdc60;
+  width: 80%;
+  margin: 0 auto;
+}
+.mapped-reports button {
+  border-radius: 20px;
+  padding: 5px;
+  border: none;
+  background-color: #ffdc60;
+  
+}

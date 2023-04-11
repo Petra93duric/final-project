@@ -1,0 +1,16 @@
+.div-candidateCard {
+  background-color: #232323;
+  width: 30%;
+  color: white;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.div-candidateCard img {
+  border: 5px solid #ffdc60;
+  width: 130px;
+  border-radius: 40px;
+}
+.div-candidateCard p {
+  margin: 10px 20px;
+}

@@ -1,9 +1,8 @@
-import React, { useContext, useState } from "react";
-import { applicationContext } from "../../context";
+import React, { useState } from "react";
 import Header from "../../components/Header";
 import SideBar from "../../components/SideBar";
 import Footer from "../../components/Footer";
-import SearchInput from "../../components/SearchInput";
+
 import "./admin-create-reports.css";
 import WizardStep1 from "../../components/WizardStep1";
 import WizardStep2 from "../../components/WizardStep2";

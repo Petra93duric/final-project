@@ -25,19 +25,25 @@ const HomePage = () => {
  
   return (
     <div className="div-homePage">
-      <Header >
-        <p>Petra</p>
-      </Header>
+      <Header />
+
+
       <div className="wrapper-home">
+        <div className="div-about">
         <h1>MVP Cone</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in
           illum perferendis expedita omnis excepturi unde debitis natus officia
           numquam sequi officiis ipsum voluptates minima quo architecto nihil,
+          iure eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in
+          illum perferendis expedita omnis excepturi unde debitis natus officia
+          numquam sequi officiis ipsum voluptates minima quo architecto nihil,
           iure eveniet.
         </p>
         <LinkButton content="Get Started" linkTo="/candidates"/>
-        <button onClick={() => handleOpen()}>Admin</button>
+        <button className="adminButton" onClick={() => handleOpen()}>Admin</button>
+        </div>
+        <img src="https://img.freepik.com/free-photo/male-female-business-people-working-tablet-office_1303-22848.jpg" alt="" />
         <Modal open={open} onClose={handleClose}>
           <div>
             <AdminLoginModal element ={clickedModal} />

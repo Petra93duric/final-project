@@ -1,11 +1,22 @@
 .div-header {
   position: fixed;
   width: 100%;
-  height: 100px;
-  background-color: black;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.321);
   color: yellow;
   z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .div-header h1 {
-  color: yellow;
+  color: #ffdc60;
+  font-weight: 100;
+}
+.div-nav{
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  font-size: larger;
+
 }

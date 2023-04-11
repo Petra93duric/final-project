@@ -1,21 +1,57 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./admin-login-modal.css";
 import LinkButton from "../LinkButton";
+import { applicationContext } from "../../context";
 
 const AdminLoginModal = () => {
+  const { body, setBody, setAccessToken, accessToken } =
+    useContext(applicationContext);
+
+  const getThatAccessToken = () => {
+    fetch("http://localhost:3333/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    })
+      .then((res) => res.json())
+      .then((data) => setAccessToken(data.accessToken));
+  };
   return (
-    <div className="div-modal">
+    <div className="div-modal-login">
       <label htmlFor="">
-      username
-        <input type="text" />
+        Username
+        <input
+          type="text"
+          onInput={(e) => {
+            setBody({ ...body, email: e.target.value });
+          }}
+          value={body.email}
+        />
       </label>
       <br />
       <label htmlFor="">
-        password
-        <input type="password" name="" id="" />
+        Password
+        <input
+          type="password"
+          name=""
+          id=""
+          onChange={(e) => {
+            setBody({ ...body, password: e.target.value });
+          }}
+          value={body.password}
+        />
       </label>
 
-      <LinkButton content="LogIn" linkTo="/admin_home" />
+      <button
+        onClick={() => {
+          getThatAccessToken();
+          localStorage.setItem("accessToken", JSON.stringify(accessToken));
+        }}
+      >
+        Login
+      </button>
     </div>
   );
 };

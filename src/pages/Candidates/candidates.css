@@ -1,8 +1,26 @@
 
 .wrapper-candidates{
-    padding: 100px 0 0 0;
+    padding: 100px;
     min-height: 100vh;
+
 }
-.wrapper-candidates img{
-    width: 50px;
+.wrapper-candidates h2 {
+    text-align: center;
+    padding: 10px;
+    font-weight: 200;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+
+
+.div-cardwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+.wrapper-candidates .div-searchInput {
+    position: absolute;
+    right: 160px;
+    top: 190px;
 }

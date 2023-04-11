@@ -1,0 +1,29 @@
+.div-modal-login{
+    background-color: #232323;
+    width: 25%;
+    height: 400px;
+    margin: 300px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+.div-modal-login input{
+    width: 90%;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffdc60;
+    margin: 10px;
+    color: white;
+    font-size: larger;
+}
+.div-modal-login button{
+    background-color: transparent;
+    border: 1px solid #ffdc60;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 30px;
+}

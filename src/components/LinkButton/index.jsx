@@ -1,13 +1,15 @@
-import React, {useContext} from 'react'
-import { Link } from 'react-router-dom'
-import "./link-button.css"
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import "./link-button.css";
 
-const LinkButton = ({content,linkTo}) => {
-
-
+const LinkButton = ({ content, linkTo, setAccessToken }) => {
   return (
-    <Link to={linkTo}> <p> {content} </p> </Link>
-  )
-}
+    <div className="div-linkToButton">
+      <Link to={linkTo}>
+        <p> {content} </p>
+      </Link>
+    </div>
+  );
+};
 
-export default LinkButton
+export default LinkButton;

@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+.App{
+  background-image: linear-gradient(to right, #000000, #100e0f, #191819, #212023, #29292d, #303137, #373941, #3d414b, #474957, #525163, #5f596e, #6e6078);  
+color: white;
+}
