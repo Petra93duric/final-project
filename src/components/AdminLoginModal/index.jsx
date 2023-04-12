@@ -14,7 +14,7 @@ const AdminLoginModal = () => {
       },
       body: JSON.stringify(body),
     })
-      .then((res) => res.json().catch((e) => console.log(e)))
+      .then((res) => res.json())
       .then((data) => {
         setAccessToken(data?.accessToken);
         if (data?.accessToken) {
@@ -24,7 +24,7 @@ const AdminLoginModal = () => {
           );
           login();
         }
-      });
+      }).catch((e) => console.log(e));
   };
   return (
     <div className="div-modal-login">

@@ -10,7 +10,7 @@ import WizardStep3 from "../../components/WizardStep3";
 import { useNavigate } from "react-router-dom";
 
 const AdminCreateReports = () => {
-  const { accessToken } = useContext(applicationContext);
+  const { accessToken, setReports, reports,setFreshData,freshData } = useContext(applicationContext);
   const [step, setStep] = useState(0);
   const [createReport, setCreateReport] = useState({
     candidateId: "",
@@ -24,7 +24,7 @@ const AdminCreateReports = () => {
   });
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  function CreateNewReport() {
+  function createNewReport() {
     fetch("http://localhost:3333/api/reports" , {
       method: "POST",
       headers: {
@@ -35,6 +35,8 @@ const AdminCreateReports = () => {
     })
       .then((res) => {
         if (res.ok) {
+          // setReports(...reports,createReport)
+          setFreshData(!freshData)
           navigate("/admin_home/reports");
         } else {
           throw new Error("nije proslo");
@@ -47,17 +49,6 @@ const AdminCreateReports = () => {
     // .then((data) => {
     //   navigate("/admin_home/reports");
     // });
-  }
-  function deleteReport(){
-   fetch ("http://localhost:3333/api/reports"+ {},{
-    method: "DELETE",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${accessToken}`,
-    },
-    body: JSON.stringify(createReport),
-   })
-
   }
 
   function nextButtonClicked() {
@@ -109,10 +100,11 @@ const AdminCreateReports = () => {
               back1ButtonClicked={back1ButtonClicked}
               setCreateReport={setCreateReport}
               createReport={createReport}
+              submit = {createNewReport}
+              
             />
           )}
         </div>
-        <button onClick={CreateNewReport}>sasa</button>
         {/* {error ? "greska" : "nije greska"} */}
       </div>
       <Footer />

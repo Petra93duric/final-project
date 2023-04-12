@@ -11,9 +11,9 @@ const WizardStep1 = ({ nextButtonClicked, setCreateReport, createReport }) => {
   );
 
   return (
-    <div>
+    <div >
       <SearchInput />
-      <div>
+      <div className="div-wizard-wrapper-first">
         {filtered &&
           filtered?.map((e) => (
             <WizardFirstCard

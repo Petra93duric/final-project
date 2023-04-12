@@ -19,6 +19,7 @@ function App() {
     email: "",
     password: "",
   });
+  const [freshData, setFreshData] = useState(false)
   const [accessToken, setAccessToken] = useState(
     JSON.parse(localStorage.getItem("accessToken"))
   );
@@ -62,17 +63,19 @@ function App() {
   }
   useEffect(() => {
     fetchDataCandidates();
-    fetchDataReports();
     fetchDataCompanies();
-  }, [value, reports]);
+  }, []);
+  useEffect(() => {
+    fetchDataReports();
+  }, [freshData]);
 
-  
   return (
     <div className="App">
       <ApplicationProvider
         value={{
           candidates,
           reports,
+          setReports,
           companies,
           showClicked,
           value,
@@ -82,6 +85,8 @@ function App() {
           accessToken,
           logout,
           login,
+          setFreshData,
+          freshData
         }}
       >
         {/* kada nemamo token */}

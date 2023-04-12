@@ -6,8 +6,9 @@ import LinkButton from "../../components/LinkButton";
 import { applicationContext } from "../../context";
 import PartnerSection from "../../components/PartnerSection";
 import Modal from "@mui/material/Modal";
-import ReportModal from "../../components/ReportModal";
 import AdminLoginModal from "../../components/AdminLoginModal";
+
+
 
 const HomePage = () => {
   const { accessToken, login } = useContext(applicationContext);

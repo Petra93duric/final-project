@@ -3,7 +3,12 @@ import React from "react";
 import SearchInput from "../SearchInput";
 import "./wizard-step-3.css";
 
-const WizardStep3 = ({ back1ButtonClicked, setCreateReport, createReport }) => {
+const WizardStep3 = ({
+  back1ButtonClicked,
+  setCreateReport,
+  createReport,
+  submit,
+}) => {
   return (
     <div>
       <input
@@ -50,7 +55,19 @@ const WizardStep3 = ({ back1ButtonClicked, setCreateReport, createReport }) => {
         }
       ></textarea>
       <button onClick={back1ButtonClicked}>Back</button>
-      <button>Submit</button>
+      <button
+        onClick={submit}
+        disabled={
+          createReport.interviewDate &&
+          createReport.phase &&
+          createReport.status &&
+          createReport.note
+            ? false
+            : true
+        }
+      >
+        Submit
+      </button>
     </div>
   );
 };

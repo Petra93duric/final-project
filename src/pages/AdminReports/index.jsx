@@ -10,7 +10,8 @@ import Modal from "@mui/material/Modal";
 import ReportModal from "../../components/ReportModal";
 
 const AdminReports = () => {
-  const { reports, value } = useContext(applicationContext);
+  const { reports, value, accessToken, createReport, freshData, setFreshData } =
+    useContext(applicationContext);
   const [clickedModal, setClickedModal] = useState(null);
   const [open, setOpen] = React.useState(false);
   const handleOpen = (element) => {
@@ -18,9 +19,24 @@ const AdminReports = () => {
     setClickedModal(element);
   };
   const handleClose = () => setOpen(false);
-  const filteredReports = reports?.filter(rep=>(rep.companyName.toLowerCase().includes(value.toLowerCase())) ||(rep.candidateName.toLowerCase().includes(value.toLowerCase())))
+  const filteredReports = reports?.filter(
+    (rep) =>
+      rep.companyName.toLowerCase().includes(value.toLowerCase()) ||
+      rep.candidateName.toLowerCase().includes(value.toLowerCase())
+  );
 
-
+  function deleteReport(id) {
+    fetch(`http://localhost:3333/api/reports/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${accessToken}`,
+      },
+      body: JSON.stringify(createReport),
+    }).then(() => {
+      setFreshData(!freshData);
+    });
+  }
   return (
     <div className="div-adminReports">
       <Header goBack="AdminHome" goToRoute={"/admin_home"} />
@@ -28,12 +44,13 @@ const AdminReports = () => {
       <div className="wrapper-adminReports">
         <h2>Reports</h2>
         <SearchInput />
-        {filteredReports && filteredReports?.map((element) => (
-          <>
-            <CandidateReport report={element} />
-            <button onClick={() => handleOpen(element)}>Click</button>
-          </>
-        ))}
+        {filteredReports &&
+          filteredReports?.map((element) => (
+            <>
+              <CandidateReport report={element} deleteReport={deleteReport} />
+              <button onClick={() => handleOpen(element)}>Click</button>
+            </>
+          ))}
         <Modal open={open} onClose={handleClose}>
           <div>
             <ReportModal element={clickedModal} />
