@@ -50,7 +50,7 @@ const WizardStep3 = ({ back1ButtonClicked, setCreateReport, createReport }) => {
         }
       ></textarea>
       <button onClick={back1ButtonClicked}>Back</button>
-      <input type="submit"/>
+      <button>Submit</button>
     </div>
   );
 };

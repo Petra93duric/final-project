@@ -9,7 +9,7 @@ const CandidateReport = ({ report }) => {
       <p>{report.candidateName}</p>
       <p>{moment(report.interviewDate).format("mm/dd/yyyy")}</p>
       <p>{report.status}</p>
-      <h2>X</h2>
+      {/* <button onClick={()=>}>x</button> */}
     </div>
   );
 };

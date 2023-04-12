@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import { ApplicationProvider } from "./context";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import Candidates from "./pages/Candidates";
 import CandidateInfo from "./pages/CandidateInfo";
 import AdminHome from "./pages/AdminHome";
@@ -22,6 +22,17 @@ function App() {
   const [accessToken, setAccessToken] = useState(
     JSON.parse(localStorage.getItem("accessToken"))
   );
+
+  const navigate = useNavigate();
+
+  const logout = () => {
+    setAccessToken("");
+    localStorage.removeItem("accessToken");
+    navigate("/");
+  };
+  const login = () => {
+    navigate("/admin_home");
+  };
 
   function fetchDataCandidates() {
     fetch("http://localhost:3333/api/candidates")
@@ -53,7 +64,9 @@ function App() {
     fetchDataCandidates();
     fetchDataReports();
     fetchDataCompanies();
-  }, [value]);
+  }, [value, reports]);
+
+  
   return (
     <div className="App">
       <ApplicationProvider
@@ -66,21 +79,34 @@ function App() {
           setBody,
           body,
           setAccessToken,
-          accessToken
+          accessToken,
+          logout,
+          login,
         }}
       >
-        <Routes>
-          <Route exact path="/" element={<HomePage />} />
-          <Route path="/candidates" element={<Candidates />} />
-          <Route path="/candidates/:id" element={<CandidateInfo />} />
-          <Route path="/admin_home" element={<AdminHome />} />
-          <Route path="/admin_home/reports" element={<AdminReports />} />
-          <Route
-            path="/admin_home/create_reports"
-            element={<AdminCreateReports />}
-          />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
+        {/* kada nemamo token */}
+        {/* {token ? <Routes1 /> : <Router2 />} */}
+        {accessToken ? (
+          <Routes>
+            <Route exact path="/" element={<HomePage />} />
+            <Route path="/candidates" element={<Candidates />} />
+            <Route path="/candidates/:id" element={<CandidateInfo />} />
+            <Route path="/admin_home" element={<AdminHome />} />
+            <Route path="/admin_home/reports" element={<AdminReports />} />
+            <Route
+              path="/admin_home/create_reports"
+              element={<AdminCreateReports />}
+            />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        ) : (
+          <Routes>
+            <Route exact path="/" element={<HomePage />} />
+            <Route path="/candidates" element={<Candidates />} />
+            <Route path="/candidates/:id" element={<CandidateInfo />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        )}
       </ApplicationProvider>
     </div>
   );

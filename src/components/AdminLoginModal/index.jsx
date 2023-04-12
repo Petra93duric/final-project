@@ -1,10 +1,9 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./admin-login-modal.css";
-import LinkButton from "../LinkButton";
 import { applicationContext } from "../../context";
 
 const AdminLoginModal = () => {
-  const { body, setBody, setAccessToken, accessToken } =
+  const { body, setBody, setAccessToken, accessToken, login } =
     useContext(applicationContext);
 
   const getThatAccessToken = () => {
@@ -15,13 +14,22 @@ const AdminLoginModal = () => {
       },
       body: JSON.stringify(body),
     })
-      .then((res) => res.json())
-      .then((data) => setAccessToken(data.accessToken));
+      .then((res) => res.json().catch((e) => console.log(e)))
+      .then((data) => {
+        setAccessToken(data?.accessToken);
+        if (data?.accessToken) {
+          localStorage.setItem(
+            "accessToken",
+            JSON.stringify(data?.accessToken)
+          );
+          login();
+        }
+      });
   };
   return (
     <div className="div-modal-login">
       <label htmlFor="">
-        Username
+        Email
         <input
           type="text"
           onInput={(e) => {
@@ -37,7 +45,7 @@ const AdminLoginModal = () => {
           type="password"
           name=""
           id=""
-          onChange={(e) => {
+          onInput={(e) => {
             setBody({ ...body, password: e.target.value });
           }}
           value={body.password}
@@ -47,7 +55,7 @@ const AdminLoginModal = () => {
       <button
         onClick={() => {
           getThatAccessToken();
-          localStorage.setItem("accessToken", JSON.stringify(accessToken));
+          
         }}
       >
         Login

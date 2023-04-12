@@ -18,5 +18,11 @@
   display: flex;
   justify-content: space-around;
   font-size: larger;
+  align-items: center;
 
+}
+.div-nav p {
+  color: white;
+  text-decoration: none;
+ 
 }

@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Header from "../../components/Header";
 import SideBar from "../../components/SideBar";
 import Footer from "../../components/Footer";
-
+import { applicationContext } from "../../context";
 import "./admin-create-reports.css";
 import WizardStep1 from "../../components/WizardStep1";
 import WizardStep2 from "../../components/WizardStep2";
 import WizardStep3 from "../../components/WizardStep3";
+import { useNavigate } from "react-router-dom";
 
 const AdminCreateReports = () => {
+  const { accessToken } = useContext(applicationContext);
   const [step, setStep] = useState(0);
   const [createReport, setCreateReport] = useState({
     candidateId: "",
@@ -20,6 +22,44 @@ const AdminCreateReports = () => {
     status: "",
     note: "",
   });
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
+  function CreateNewReport() {
+    fetch("http://localhost:3333/api/reports" , {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${accessToken}`,
+      },
+      body: JSON.stringify(createReport),
+    })
+      .then((res) => {
+        if (res.ok) {
+          navigate("/admin_home/reports");
+        } else {
+          throw new Error("nije proslo");
+        }
+      })
+      .catch((e) => {
+        setError(e.message);
+      });
+
+    // .then((data) => {
+    //   navigate("/admin_home/reports");
+    // });
+  }
+  function deleteReport(){
+   fetch ("http://localhost:3333/api/reports"+ {},{
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${accessToken}`,
+    },
+    body: JSON.stringify(createReport),
+   })
+
+  }
+
   function nextButtonClicked() {
     setStep(1);
   }
@@ -36,11 +76,13 @@ const AdminCreateReports = () => {
   return (
     <div className="div-adminCreateReports">
       <Header goBack="AdminHome" goToRoute={"/admin_home"} />
+
       <SideBar
         createReport={createReport}
         selectedCand={`Candidate: ${createReport?.candidateName}`}
         selectedComp={`Company: ${createReport?.companyName}`}
       />
+
       <div className="wrapper-adminCreateReports">
         <p onClick={backButtonClicked}>Select Candidate --- </p>
         <p onClick={nextButtonClicked}>Select Company --- </p>
@@ -70,6 +112,8 @@ const AdminCreateReports = () => {
             />
           )}
         </div>
+        <button onClick={CreateNewReport}>sasa</button>
+        {/* {error ? "greska" : "nije greska"} */}
       </div>
       <Footer />
     </div>
