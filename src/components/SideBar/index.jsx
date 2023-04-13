@@ -9,9 +9,12 @@ const SideBar = ({ selectedCand, selectedComp }) => {
     <div className="div-sideBar">
       <LinkButton content="Reports" linkTo="/admin_home/reports" />
       <LinkButton content="Create Report" linkTo="/admin_home/create_reports" />
-      <h2>{selectedCand}</h2>
-      <h2>{selectedComp}</h2>
+      <div className="div-selected">
+      <p>{selectedCand}</p>
+      <p> {selectedComp}</p>
+      </div>
       <button
+      className="logout-button"
         onClick={() => {
           logout();
           setBody({ ...body, password: "", email:"" });

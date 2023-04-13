@@ -5,11 +5,12 @@ import SideBar from "../../components/SideBar";
 import "./admin-home.css";
 import ReactCalendar from "../../components/ReactCalendar";
 import MusicPlayerSlider from "../../components/MusicPlayer";
+import adminIcon from "../../assets/adminIcon.svg"
 
 const AdminHome = () => {
   return (
     <div className="div-adminHome">
-      <Header goBack="AdminHome" />
+      <Header goBack="AdminHome" icon={adminIcon}/>
       <SideBar />
       <div className="wrapper-adminHome">
         <ReactCalendar />

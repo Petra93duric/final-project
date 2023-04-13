@@ -6,6 +6,7 @@ import Footer from "../../components/Footer";
 import Toggle from "../../components/Toggle";
 import SearchInput from "../../components/SearchInput";
 import CandidateCard from "../../components/CandidateCard";
+import candidatesIcon from "../../assets/candidatesIcon.svg"
 
 const Candidates = () => {
   const { candidates, value } = useContext(applicationContext);
@@ -13,9 +14,10 @@ const Candidates = () => {
     char.name.toLowerCase().includes(value.toLowerCase())
   );
 
+
   return (
     <div className="div-candidates">
-      <Header goBack="Candidates" />
+      <Header goBack="Candidates" icon={candidatesIcon}/>
       <div className="wrapper-candidates">
         <Toggle />
         <h2>Candidates</h2>

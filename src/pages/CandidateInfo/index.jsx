@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import Modal from "@mui/material/Modal";
 import ReportModal from "../../components/ReportModal";
 import moment from "moment/moment";
+import candidatesIcon from "../../assets/candidatesIcon.svg"
 
 const CandidateInfo = () => {
   const { candidates, reports } = useContext(applicationContext);
@@ -23,7 +24,7 @@ const CandidateInfo = () => {
 
   return (
     <div className="div-candidateInfo">
-      <Header goToRoute="/candidates" goBack="Candidates" />
+      <Header goToRoute="/candidates" goBack="Candidates" icon={candidatesIcon} />
       <div className="wrapper-candidateInfo">
         <h2>Candidate Info</h2>
         <div className="div-candidateInfoContent">

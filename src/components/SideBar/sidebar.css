@@ -5,3 +5,35 @@
   position: fixed;
   height: 100%;
 }
+.div-sideBar .div-linkToButton{
+  border: 1px solid #ffdc60;
+  width: 140px;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+.div-sideBar .logout-button{
+  border: none;
+  width: 100px;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  background-color: #ffdc60;
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.div-selected{
+  position: absolute;
+  bottom: 160px;
+  width: 60%;
+  margin: 10px;
+}
+
+.div-selected p{
+  margin: 5px;
+}

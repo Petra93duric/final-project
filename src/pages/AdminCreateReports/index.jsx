@@ -8,6 +8,7 @@ import WizardStep1 from "../../components/WizardStep1";
 import WizardStep2 from "../../components/WizardStep2";
 import WizardStep3 from "../../components/WizardStep3";
 import { useNavigate } from "react-router-dom";
+import adminIcon from "../../assets/adminIcon.svg"
 
 const AdminCreateReports = () => {
   const { accessToken, setReports, reports,setFreshData,freshData } = useContext(applicationContext);
@@ -66,18 +67,20 @@ const AdminCreateReports = () => {
 
   return (
     <div className="div-adminCreateReports">
-      <Header goBack="AdminHome" goToRoute={"/admin_home"} />
+      <Header goBack="AdminHome" goToRoute={"/admin_home"} icon={adminIcon}/>
 
       <SideBar
         createReport={createReport}
-        selectedCand={`Candidate: ${createReport?.candidateName}`}
-        selectedComp={`Company: ${createReport?.companyName}`}
+        selectedCand={`Candidate > ${createReport?.candidateName}`}
+        selectedComp={`Company > ${createReport?.companyName}`}
       />
 
       <div className="wrapper-adminCreateReports">
-        <p onClick={backButtonClicked}>Select Candidate --- </p>
-        <p onClick={nextButtonClicked}>Select Company --- </p>
+        <div className="wizard-title">
+        <p onClick={backButtonClicked}>Select Candidate  </p>
+        <p onClick={nextButtonClicked}>Select Company  </p>
         <p onClick={next2ButtonClicked}>Fill Report Details</p>
+        </div>
 
         <div className="div-wizard">
           {step === 0 && (

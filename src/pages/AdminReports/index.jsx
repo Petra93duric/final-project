@@ -8,6 +8,7 @@ import "./admin-reports.css";
 import CandidateReport from "../../components/CandidateReport";
 import Modal from "@mui/material/Modal";
 import ReportModal from "../../components/ReportModal";
+import adminIcon from "../../assets/adminIcon.svg"
 
 const AdminReports = () => {
   const { reports, value, accessToken, createReport, freshData, setFreshData } =
@@ -39,7 +40,7 @@ const AdminReports = () => {
   }
   return (
     <div className="div-adminReports">
-      <Header goBack="AdminHome" goToRoute={"/admin_home"} />
+      <Header goBack="AdminHome" goToRoute={"/admin_home"} icon={adminIcon}/>
       <SideBar />
       <div className="wrapper-adminReports">
         <h2>Reports</h2>
@@ -47,8 +48,8 @@ const AdminReports = () => {
         {filteredReports &&
           filteredReports?.map((element) => (
             <>
-              <CandidateReport report={element} deleteReport={deleteReport} />
-              <button onClick={() => handleOpen(element)}>Click</button>
+              <CandidateReport report={element} deleteReport={deleteReport} handleOpen={handleOpen} />
+      
             </>
           ))}
         <Modal open={open} onClose={handleClose}>

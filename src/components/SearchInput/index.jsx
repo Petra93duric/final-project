@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { applicationContext } from "../../context";
+import loupeImg from "../../assets/loupe.svg"
 import "./search-input.css";
 
 const SearchInput = () => {
@@ -14,6 +15,7 @@ const SearchInput = () => {
           showClicked(e.target.value);
         }}
       />
+        <img src={loupeImg} alt="" />
     </div>
   );
 };

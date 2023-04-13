@@ -6,5 +6,8 @@
 
 .wrapper-adminCreateReports {
   flex-grow: 1;
-  padding: 100px 200px;
+  padding: 200px 200px;
+}
+.wizard-title p{
+  display: inline-block;
 }

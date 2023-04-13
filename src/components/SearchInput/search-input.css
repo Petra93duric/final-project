@@ -1,7 +1,25 @@
+.div-searchInput {
+    position: absolute;
+    right: 300px;
+    top: 160px;
+    width: 200px;
+    padding: 10px;
+}
 .div-searchInput input{
     background-color: transparent;
     border: none;
     border-bottom: 1px solid white;
-    padding: 5px;
+    width: 160px;
     color: white;
+   
+}
+.div-searchInput input:focus{
+    outline: none;
+}
+
+.div-searchInput img{
+    width: 20px;
+    padding: 2px;
+    position: absolute;
+    top: 2px;
 }
