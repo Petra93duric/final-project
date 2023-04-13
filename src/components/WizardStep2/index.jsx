@@ -11,9 +11,9 @@ const WizardStep2 = ({next2ButtonClicked,backButtonClicked,setCreateReport, crea
   
 
   return (
-    <div>
+    <div className=''>
       <SearchInput />
-      <div>
+      <div className='div-select-company'>
         {filtered && filtered?.map((e) =>(
           <WizardSecondCard
           company={e}
@@ -21,8 +21,10 @@ const WizardStep2 = ({next2ButtonClicked,backButtonClicked,setCreateReport, crea
           createReport={createReport}
           />
           ))}
+          <div>
           <button onClick={backButtonClicked} className="button-company">Back</button>
           <button onClick={next2ButtonClicked} disabled={!createReport.companyName ? true : false} className="button-company">Next</button>
+          </div>
       </div>
     </div>
   )
