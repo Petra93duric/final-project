@@ -1,0 +1,400 @@
+{
+  "companies": [
+    {
+      "id": 34149463,
+      "name": "Wintheiser - Padberg",
+      "email": "Carolina.Ryan@gmail.com"
+    },
+    {
+      "id": 11081915,
+      "name": "Krajcik Inc",
+      "email": "Miguel.Veum@yahoo.com"
+    },
+    {
+      "id": 41822931,
+      "name": "Leffler, Kulas and Schulist",
+      "email": "Genevieve.Flatley@yahoo.com"
+    },
+    {
+      "id": 35251209,
+      "name": "Konopelski - Romaguera",
+      "email": "Kian.Schimmel@gmail.com"
+    },
+    {
+      "id": 32220706,
+      "name": "Thompson, Grimes and Wolf",
+      "email": "Cayla.Kuphal54@yahoo.com"
+    },
+    {
+      "id": 92859858,
+      "name": "Volkman - Schimmel",
+      "email": "Kaci_Davis@yahoo.com"
+    }
+  ],
+  "candidates": [
+    {
+      "name": "Zula Feeney jr",
+      "birthday": "1992-09-12T14:57:16.000Z",
+      "email": "Mathew.Schultz6@yahoo.com",
+      "education": "Belgrade Institute of Technology",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "id": 9451057
+    },
+    {
+      "id": 88648435,
+      "name": "Mireya Beahan IV",
+      "birthday": "Mon Feb 27 2017 05:26:30 GMT+0100 (CET)",
+      "email": "Armani_Goldner61@hotmail.com",
+      "education": "Belgrade Institute of Technology",
+      "avatar": "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
+    },
+    {
+      "name": "Carolina Bahringer  jr",
+      "birthday": "1989-11-17T04:50:30.000Z",
+      "email": "Miller_Bauch@yahoo.com",
+      "education": "Belgrade Institute of Technology",
+      "avatar": "https://images.unsplash.com/photo-1614204424926-196a80bf0be8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "id": 99087456
+    },
+    {
+      "id": 66318927,
+      "name": "Lourdes Kuhn",
+      "birthday": "Tue Aug 29 2017 04:35:15 GMT+0200 (CEST)",
+      "email": "Leonel33@gmail.com",
+      "education": "Faculty of Electrical Engineering",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+    },
+    {
+      "id": 89091536,
+      "name": "Brennon Rolfson",
+      "birthday": "Mon Feb 06 2017 14:22:06 GMT+0100 (CET)",
+      "email": "Alexa_Veum@hotmail.com",
+      "education": "Belgrade Institute of Technology",
+      "avatar": "https://images.unsplash.com/photo-1596075780750-81249df16d19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+    },
+    {
+      "id": 6496882,
+      "name": "Jeanette Mohr",
+      "birthday": "Tue Dec 12 2017 11:33:07 GMT+0100 (CET)",
+      "email": "Joseph_Terry35@hotmail.com",
+      "education": "Belgrade Institute of Technology",
+      "avatar": "https://images.unsplash.com/photo-1542327897-d73f4005b533?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "name": "Marija Bugaric",
+      "birthday": "2022-12-16T13:23:38.892Z",
+      "email": "marijabugariceva@gmail.com",
+      "education": "Bugariceva school",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEUOCj1PwJ0Nvd9ZD6B1EaVFgxSdhtk2UfGA&usqp=CAU",
+      "id": 99087457
+    },
+    {
+      "id": 38097373,
+      "name": "Raul Donnelly",
+      "birthday": "Fri Nov 20 2020 11:46:47 GMT+0100 (Central European Standard Time)",
+      "email": "Oscar.Schimmel@yahoo.com",
+      "education": "Assistant",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwcG9ydHJhaXR8ZW58MHx8MHx8&w=1000&q=80"
+    },
+    {
+      "id": 57835921,
+      "name": "Aisha Dare",
+      "birthday": "Fri Feb 19 2021 14:12:48 GMT+0100 (Central European Standard Time)",
+      "email": "Loma.Bayer57@yahoo.com",
+      "education": "Representative",
+      "avatar": "https://i.pinimg.com/originals/03/2c/11/032c1180bad302dbb0a8a4250d639e63.jpg"
+    },
+    {
+      "id": 84852310,
+      "name": "Rosalyn Batz DDS",
+      "birthday": "Tue Aug 10 2021 07:58:05 GMT+0200 (Central European Summer Time)",
+      "email": "Frederik_DAmore@gmail.com",
+      "education": "Technician",
+      "avatar": "https://i.pinimg.com/originals/f6/a7/d1/f6a7d19776e3d81a1794e4d486af46cd.jpg"
+    },
+    {
+      "id": 84815318,
+      "name": "John May",
+      "birthday": "Tue Aug 11 2000 07:08:05 GMT+0200 (Central European Summer Time)",
+      "email": "john.may@gmail.com",
+      "education": "Technician",
+      "avatar": "https://static1.bigstockphoto.com/1/7/2/large1500/27169880.jpg"
+    }
+  ],
+  "reports": [
+    {
+      "candidateId": 88648435,
+      "candidateName": "Mireya Beahan IV",
+      "companyId": 35251209,
+      "companyName": "Konopelski - Romaguera",
+      "interviewDate": "2023-04-21",
+      "phase": "HR",
+      "status": "Declined",
+      "note": "Bacon ipsum dolor amet salami rump pancetta short loin buffalo pork belly. Burgdoggen boudin turducken sirloin drumstick t-bone. Tongue fatback shankle capicola short loin ground round chislic. Beef bresaola turkey porchetta meatloaf. Ribeye sirloin turkey bacon pork loin.",
+      "id": 91627256
+    },
+    {
+      "candidateId": 9451057,
+      "candidateName": "Zula Feeney jr",
+      "companyId": 34149463,
+      "companyName": "Wintheiser - Padberg",
+      "interviewDate": "2023-04-05",
+      "phase": "HR",
+      "status": "Passed",
+      "note": "iuiu",
+      "id": 91627257
+    },
+    {
+      "candidateId": 88648435,
+      "candidateName": "Mireya Beahan IV",
+      "companyId": 41822931,
+      "companyName": "Leffler, Kulas and Schulist",
+      "interviewDate": "2023-04-12",
+      "phase": "CV",
+      "status": "Passed",
+      "note": ";lkp[ll",
+      "id": 91627258
+    },
+    {
+      "candidateId": 84815318,
+      "candidateName": "John May",
+      "companyId": 35251209,
+      "companyName": "Konopelski - Romaguera",
+      "interviewDate": "2023-04-12",
+      "phase": "CV",
+      "status": "Passed",
+      "note": "fdsfsf",
+      "id": 91627259
+    },
+    {
+      "candidateId": 84815318,
+      "candidateName": "John May",
+      "companyId": 92859858,
+      "companyName": "Volkman - Schimmel",
+      "interviewDate": "2023-03-26",
+      "phase": "CV",
+      "status": "Passed",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627260
+    },
+    {
+      "candidateId": 99087456,
+      "candidateName": "Carolina Bahringer  jr",
+      "companyId": 34149463,
+      "companyName": "Wintheiser - Padberg",
+      "interviewDate": "2023-04-12",
+      "phase": "Technical",
+      "status": "Declined",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627261
+    },
+    {
+      "candidateId": 84852310,
+      "candidateName": "Rosalyn Batz DDS",
+      "companyId": 92859858,
+      "companyName": "Volkman - Schimmel",
+      "interviewDate": "2023-05-18",
+      "phase": "Technical",
+      "status": "Passed",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627262
+    },
+    {
+      "candidateId": 66318927,
+      "candidateName": "Lourdes Kuhn",
+      "companyId": 32220706,
+      "companyName": "Thompson, Grimes and Wolf",
+      "interviewDate": "2023-01-31",
+      "phase": "CV",
+      "status": "Passed",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627263
+    },
+    {
+      "candidateId": 89091536,
+      "candidateName": "Brennon Rolfson",
+      "companyId": 41822931,
+      "companyName": "Leffler, Kulas and Schulist",
+      "interviewDate": "2022-08-09",
+      "phase": "HR",
+      "status": "Passed",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627264
+    },
+    {
+      "candidateId": 99087457,
+      "candidateName": "Marija Bugaric",
+      "companyId": 92859858,
+      "companyName": "Volkman - Schimmel",
+      "interviewDate": "2022-12-02",
+      "phase": "HR",
+      "status": "Passed",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627265
+    },
+    {
+      "candidateId": 99087456,
+      "candidateName": "Carolina Bahringer  jr",
+      "companyId": 35251209,
+      "companyName": "Konopelski - Romaguera",
+      "interviewDate": "2023-04-15",
+      "phase": "CV",
+      "status": "Declined",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627266
+    },
+    {
+      "candidateId": 38097373,
+      "candidateName": "Raul Donnelly",
+      "companyId": 34149463,
+      "companyName": "Wintheiser - Padberg",
+      "interviewDate": "2023-01-17",
+      "phase": "Technical",
+      "status": "Declined",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627267
+    },
+    {
+      "candidateId": 84815318,
+      "candidateName": "John May",
+      "companyId": 32220706,
+      "companyName": "Thompson, Grimes and Wolf",
+      "interviewDate": "2022-11-30",
+      "phase": "Technical",
+      "status": "Passed",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627268
+    },
+    {
+      "candidateId": 88648435,
+      "candidateName": "Mireya Beahan IV",
+      "companyId": 92859858,
+      "companyName": "Volkman - Schimmel",
+      "interviewDate": "2023-04-23",
+      "phase": "CV",
+      "status": "Passed",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627269
+    },
+    {
+      "candidateId": 9451057,
+      "candidateName": "Zula Feeney jr",
+      "companyId": 32220706,
+      "companyName": "Thompson, Grimes and Wolf",
+      "interviewDate": "2023-01-04",
+      "phase": "HR",
+      "status": "Passed",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627270
+    },
+    {
+      "candidateId": 99087456,
+      "candidateName": "Carolina Bahringer  jr",
+      "companyId": 92859858,
+      "companyName": "Volkman - Schimmel",
+      "interviewDate": "2022-10-17",
+      "phase": "Technical",
+      "status": "Declined",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627271
+    },
+    {
+      "candidateId": 66318927,
+      "candidateName": "Lourdes Kuhn",
+      "companyId": 32220706,
+      "companyName": "Thompson, Grimes and Wolf",
+      "interviewDate": "2023-02-08",
+      "phase": "HR",
+      "status": "Passed",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627272
+    },
+    {
+      "candidateId": 6496882,
+      "candidateName": "Jeanette Mohr",
+      "companyId": 11081915,
+      "companyName": "Krajcik Inc",
+      "interviewDate": "2023-04-16",
+      "phase": "Technical",
+      "status": "Declined",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627273
+    },
+    {
+      "candidateId": 84852310,
+      "candidateName": "Rosalyn Batz DDS",
+      "companyId": 11081915,
+      "companyName": "Krajcik Inc",
+      "interviewDate": "2023-04-10",
+      "phase": "CV",
+      "status": "Passed",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627274
+    },
+    {
+      "candidateId": 99087457,
+      "candidateName": "Marija Bugaric",
+      "companyId": 11081915,
+      "companyName": "Krajcik Inc",
+      "interviewDate": "2022-11-16",
+      "phase": "Technical",
+      "status": "Declined",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627275
+    },
+    {
+      "candidateId": 57835921,
+      "candidateName": "Aisha Dare",
+      "companyId": 34149463,
+      "companyName": "Wintheiser - Padberg",
+      "interviewDate": "2023-04-19",
+      "phase": "CV",
+      "status": "Passed",
+      "note": "In the example above, we switch from using the stringified JSON as the body of the fetch() to using a FormData. FormData is a built-in JavaScript object that mimics HTML forms.\n\nWhat this allows us to do is create the FormData (in the example, we use a variable called “formData”) and then .append() key-value pairs to it. We append two pieces of JSON.",
+      "id": 91627276
+    },
+    {
+      "candidateId": 66318927,
+      "candidateName": "Lourdes Kuhn",
+      "companyId": 35251209,
+      "companyName": "Konopelski - Romaguera",
+      "interviewDate": "2023-04-10",
+      "phase": "HR",
+      "status": "Passed",
+      "note": "A function to execute for each element in the array. It should return a truthy value to indicate the element passes the test, and a falsy value otherwise. The function is called with the following arguments.",
+      "id": 91627277
+    },
+    {
+      "candidateId": 9451057,
+      "candidateName": "Zula Feeney jr",
+      "companyId": 32220706,
+      "companyName": "Thompson, Grimes and Wolf",
+      "interviewDate": "2023-04-11",
+      "phase": "HR",
+      "status": "Declined",
+      "note": "The some() method is an iterative method. It calls a provided callbackFn function once for each element in an array, until the callbackFn returns a truthy value. If such an element is found, some() immediately returns true and stops iterating through the array. Otherwise, if callbackFn returns a falsy value for all elements, some() returns false.",
+      "id": 91627278
+    },
+    {
+      "candidateId": 88648435,
+      "candidateName": "Mireya Beahan IV",
+      "companyId": 32220706,
+      "companyName": "Thompson, Grimes and Wolf",
+      "interviewDate": "2023-04-04",
+      "phase": "Technical",
+      "status": "Declined",
+      "note": "The some() method is an iterative method. It calls a provided callbackFn function once for each element in an array, until the callbackFn returns a truthy value. If such an element is found, some() immediately returns true and stops iterating through the array. Otherwise, if callbackFn returns a falsy value for all elements, some() returns false.\n\n",
+      "id": 91627279
+    }
+  ],
+  "users": [
+    {
+      "email": "dev@dev.com",
+      "password": "$2a$10$Ht9ATCnB3LhyEpPg.c/GOuLzkMYD2WRPZ3ZtFVP.uVCrx.nW/rwVq",
+      "name": "Developer",
+      "surname": "Developeric",
+      "age": 404,
+      "id": 1
+    }
+  ]
+}
