@@ -21,8 +21,8 @@ const WizardStep2 = ({next2ButtonClicked,backButtonClicked,setCreateReport, crea
           createReport={createReport}
           />
           ))}
-          <button onClick={backButtonClicked}>Back</button>
-          <button onClick={next2ButtonClicked} disabled={!createReport.companyName ? true : false}>Next</button>
+          <button onClick={backButtonClicked} className="button-company">Back</button>
+          <button onClick={next2ButtonClicked} disabled={!createReport.companyName ? true : false} className="button-company">Next</button>
       </div>
     </div>
   )

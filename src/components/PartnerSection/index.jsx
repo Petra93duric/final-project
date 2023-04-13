@@ -37,6 +37,7 @@ const PartnerSection = () => {
       setNumb(0);
 
     } 
+    console.log(numb);
   }
 
   function goPrev(){
@@ -44,17 +45,19 @@ const PartnerSection = () => {
     if (numb === 0){
       setNumb(6)
     }
+    console.log(numb);
+
   }
 
   return (
     <div className="div-partner">
-      <button onClick={goPrev}>Prev</button>
+      <button onClick={goPrev}> &lt;</button>
       {fiveLogos.map((e) => (
-        <div>
+        <div className="div-one-partner">
           <img src={e} />
         </div>
       ))}
-      <button onClick={goNext}>Next</button>
+      <button onClick={goNext}> &gt;	</button>
     </div>
   );
 };

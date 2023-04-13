@@ -1,3 +1,27 @@
 .div-partner img{
-    width: 50px;
+    width: 130px;
+
+}
+
+.div-partner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 200px;
+    
+}
+
+.div-partner button{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+
+
+}
+
+.div-one-partner{
+    border: 1px solid black;
+    padding: 50px 20px;
 }

@@ -4,13 +4,14 @@ import "./report-modal.css";
 const ReportModal = ({ element }) => {
   return (
     <div className="div-modal">
-      <p>{element.candidateName}</p>
+      <h1>{element.candidateName}</h1>
+      <div className="div-modal-info">
       <p>Company {element.companyName}</p>
-      <p>X</p>
       <p>Interview Date {element.interviewDate}</p>
       <p>Phase {element.phase}</p>
       <p>Status {element.status}</p>
-      <p>Notes {element.note}</p>
+      </div>
+      <p className="div-modal-notes">Notes {element.note}</p>
     </div>
   );
 };
