@@ -11,7 +11,7 @@ const WizardStep1 = ({ nextButtonClicked, setCreateReport, createReport }) => {
   );
 
   return (
-    <div >
+    <div>
       <SearchInput />
       <div className="div-wizard-wrapper-first">
         {filtered &&

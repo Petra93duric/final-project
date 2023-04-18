@@ -40,7 +40,9 @@ const CandidateInfo = () => {
         <div className="titles-candidate-info">
           <h3>Company Name</h3>
           <h3>Interview Date</h3>
-          <h3>Status</h3>
+          <h3> Status</h3>
+          <h3 className="title-report">Reports</h3>
+
         </div>
         {candidateReports?.map((element, i) => {
           return (

@@ -5,7 +5,7 @@ const WizardSecondCard = ({ company, setCreateReport, createReport }) => {
   return (
     
       <div
-        className="div-candidateCard"
+        className="div-wizard-second-card"
         onClick={() =>
           setCreateReport({
             ...createReport,

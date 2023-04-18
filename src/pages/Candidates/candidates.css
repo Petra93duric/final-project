@@ -19,6 +19,23 @@
     flex-wrap: wrap;
     justify-content: space-around
 }
+.div-cardwrapper.rows{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* height: 100px; */
+    width: 80%;
+    margin: 0 auto;
+}
+.div-cardwrapper.rows .div-candidateCard{
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 80%;
+}
+.div-cardwrapper.rows .div-candidateCard img{
+    width: 50px;
+}
 .wrapper-candidates .div-searchInput {
     position: absolute;
     right: 160px;

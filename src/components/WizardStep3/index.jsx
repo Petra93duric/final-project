@@ -10,7 +10,8 @@ const WizardStep3 = ({
   submit,
 }) => {
   return (
-    <div>
+    <div className="div-wizard-wrapper-third">
+      <div>
       <input
         type="date"
         required
@@ -43,19 +44,20 @@ const WizardStep3 = ({
         <option value="Passed">Passed</option>
         <option value="Declined">Declined</option>
       </select>
-      <br />
+      </div>
       <textarea
         name=""
         id=""
         cols="30"
-        rows="30"
+        rows="20"
         required
         onChange={(e) =>
           setCreateReport({ ...createReport, note: e.target.value })
         }
       ></textarea>
-      <button onClick={back1ButtonClicked}>Back</button>
+      <button onClick={back1ButtonClicked}className="button-company back">Back</button>
       <button
+      className="button-company submit"
         onClick={submit}
         disabled={
           createReport.interviewDate &&

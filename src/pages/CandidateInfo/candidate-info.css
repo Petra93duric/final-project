@@ -48,11 +48,16 @@
   border-bottom: 1px solid #ffdc60;
   width: 80%;
   margin: 0 auto;
+  /* text-align: center;
+   */
+}
+.mapped-reports p{
+width: 20%;
 }
 .mapped-reports button {
   border-radius: 20px;
   padding: 5px;
   border: none;
   background-color: #ffdc60;
-  
+  height: 30px;
 }

@@ -385,6 +385,39 @@
       "status": "Declined",
       "note": "The some() method is an iterative method. It calls a provided callbackFn function once for each element in an array, until the callbackFn returns a truthy value. If such an element is found, some() immediately returns true and stops iterating through the array. Otherwise, if callbackFn returns a falsy value for all elements, some() returns false.\n\n",
       "id": 91627279
+    },
+    {
+      "candidateId": 38097373,
+      "candidateName": "Raul Donnelly",
+      "companyId": 41822931,
+      "companyName": "Leffler, Kulas and Schulist",
+      "interviewDate": "2023-03-30",
+      "phase": "CV",
+      "status": "Passed",
+      "note": "fjgdkjwgsdfuwgfjwergferg",
+      "id": 91627280
+    },
+    {
+      "candidateId": 99087456,
+      "candidateName": "Carolina Bahringer  jr",
+      "companyId": 32220706,
+      "companyName": "Thompson, Grimes and Wolf",
+      "interviewDate": "2023-01-13",
+      "phase": "Technical",
+      "status": "Declined",
+      "note": "It is quite natural to think that separating a word up into individual characters is quite easy. It turns out that for the computer this isn’t really the case. If we look at a system that understands Unicode (like XeTeX or LuaTeX), most of the time one ‘character’ is stored as one codepoint. A codepoint is a single character entity for a Unicode programme. For example, if we take the input café, it is made up of four codepoints.",
+      "id": 91627281
+    },
+    {
+      "candidateId": 84852310,
+      "candidateName": "Rosalyn Batz DDS",
+      "companyId": 35251209,
+      "companyName": "Konopelski - Romaguera",
+      "interviewDate": "2023-03-02",
+      "phase": "Technical",
+      "status": "Declined",
+      "note": "It is quite natural to think that separating a word up into individual characters is quite easy. It turns out that for the computer this isn’t really the case. If we look at a system that understands Unicode (like XeTeX or LuaTeX), most of the time one ‘character’ is stored as one codepoint. A codepoint is a single character entity for a Unicode programme. For example, if we take the input café, it is made up of four codepoints.",
+      "id": 91627282
     }
   ],
   "users": [

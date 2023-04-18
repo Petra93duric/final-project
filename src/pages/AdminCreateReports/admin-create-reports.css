@@ -11,4 +11,14 @@
 }
 .wizard-title p{
   display: inline-block;
+  font-size: larger;
+  margin-left: 5px;
+}
+.wizard-title{
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  cursor: pointer;
+
 }
