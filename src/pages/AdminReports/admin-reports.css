@@ -8,3 +8,7 @@
   flex-grow: 1;
   padding: 100px 200px;
 }
+
+.wrapper-adminReports button{
+  cursor: pointer;
+}

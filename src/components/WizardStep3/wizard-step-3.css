@@ -27,11 +27,11 @@ textarea{
 .button-company.submit{
     position: absolute;
     right: 30%;
-    bottom: 20px;
+    bottom: 100px;
 
 }
 .button-company.back{
     position: absolute;
     left:30%;
-    bottom: 20px; 
+    bottom: 100px; 
 }

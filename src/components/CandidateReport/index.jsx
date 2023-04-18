@@ -7,7 +7,7 @@ const CandidateReport = ({ report, deleteReport, handleOpen }) => {
     <div className="div-candidateReport">
       <p>{report.companyName}</p>
       <p>{report.candidateName}</p>
-      <p>{moment(report.interviewDate).format("mm/dd/yyyy")}</p>
+      <p>{moment(report.interviewDate).format("DD/MM/YYYY")}</p>
       <p>{report.status}</p>
       <button
         className="button-admin-report"

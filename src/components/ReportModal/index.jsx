@@ -11,7 +11,7 @@ const ReportModal = ({ element }) => {
       <p>Phase {element.phase}</p>
       <p>Status {element.status}</p>
       </div>
-      <p className="div-modal-notes">Notes {element.note}</p>
+      <p className="div-modal-notes">Notes: {element.note}</p>
     </div>
   );
 };
