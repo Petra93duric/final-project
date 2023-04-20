@@ -17,6 +17,7 @@ const Candidates = () => {
     sessionStorage.setItem("candidatesToggle", candidatesToggle)
     document.body.className = candidatesToggle;
   },[candidatesToggle])
+  
   function toggleCandidates(){
     if( candidatesToggle == "box"){
       setCandidatesToggle( "rows" );

@@ -32,21 +32,17 @@ const PartnerSection = () => {
   const fiveLogos = logos.filter((e, i) => i >= 0 + numb && i < 5 + numb);
 
   function goNext() {
-    setNumb(numb + 1)
+    setNumb(numb + 1);
     if (numb === 6) {
       setNumb(0);
-
-    } 
-    console.log(numb);
+    }
   }
 
-  function goPrev(){
-    setNumb(numb-1)
-    if (numb === 0){
-      setNumb(6)
+  function goPrev() {
+    setNumb(numb - 1);
+    if (numb === 0) {
+      setNumb(6);
     }
-    console.log(numb);
-
   }
 
   return (
@@ -57,7 +53,7 @@ const PartnerSection = () => {
           <img src={e} />
         </div>
       ))}
-      <button onClick={goNext}> &gt;	</button>
+      <button onClick={goNext}> &gt; </button>
     </div>
   );
 };

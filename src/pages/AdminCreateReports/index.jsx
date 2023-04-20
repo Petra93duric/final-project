@@ -77,9 +77,9 @@ const AdminCreateReports = () => {
 
       <div className="wrapper-adminCreateReports">
         <div className="wizard-title">
-        <p className="first-step" onClick={backButtonClicked} style={{borderBottom: (step == 0)?  "2px solid #ffdc60" : ""}}>Select Candidate &gt; </p>
-        <p className="second-step" onClick={nextButtonClicked} style={{borderBottom: (step == 1)?  "2px solid #ffdc60" : ""}}>Select Company &gt; </p>
-        <p className="third-step" onClick={next2ButtonClicked} style={{borderBottom: (step == 2)?  "2px solid #ffdc60" : ""}}>Fill Report Details</p>
+        <p className="first-step"  style={{borderBottom: (step == 0)?  "2px solid #ffdc60" : ""}}>Select Candidate &gt; </p>
+        <p className="second-step"  style={{borderBottom: (step == 1)?  "2px solid #ffdc60" : ""}}>Select Company &gt; </p>
+        <p className="third-step"  style={{borderBottom: (step == 2)?  "2px solid #ffdc60" : ""}}>Fill Report Details</p>
         </div>
 
         <div className="div-wizard">
